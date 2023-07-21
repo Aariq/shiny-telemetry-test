@@ -1,6 +1,6 @@
 # Using `shiny.telemetry`
 
-Things to learn:
+## Things to learn:
 
 -   Object Oriented Programming (OOP) in R, specifically a little bit of R6
 -   Database basics (what is it, how to connect to it, etc. Don't need to learn SQL)
@@ -8,7 +8,7 @@ Things to learn:
 -   Storing database credentials as environment variables on Posit Connect
 -   Connecting to and reading data from a database into R
 
-Process for setting this up with the needs assessment app **locally**:
+## Process for setting this up with the needs assessment app ***locally*** **(on your computer only)**:
 
 1.  follow [quickstart guide](https://appsilon.github.io/shiny.telemetry/index.html) for `shiny.telemetry`
 2.  Modify data store to use a .sqlite file like so:
@@ -35,7 +35,7 @@ shiny.telemetry::Telemetry$new()$data_storage$read_event_data()
 # 6 2023-07-20 18:20:55 (dashboard) 052ac84b776b03699160e06e1… logo… NA    NA    4628696-1… NA      
 ```
 
-To set this up to work with the published app:
+## To set this up to work with the published app:
 
 1.  You'll need to use a web-accessible database, so instead of `data_storage = DataStorageSQLite` you'll use `DataStorageMariaDB` or `DataStoragePostgreSQL`, for example
 2.  Save credentials for accessing the database as environment variables in .Renviron (BUT DON'T COMMIT THIS FILE!) and use them in setting up the data storage.
