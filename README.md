@@ -2,7 +2,7 @@
 
 ## Things to learn:
 
--   Object Oriented Programming (OOP) in R, specifically a little bit of R6
+-   Object Oriented Programming (OOP) in R, specifically a little bit of [R6](https://r6.r-lib.org/)
 -   Database basics (what is it, how to connect to it, etc. Don't need to learn SQL)
 -   Hosting a Postgres, MariaDB, or MySQL database on a server (or get someone else to do this for you)
 -   Storing database credentials as environment variables on Posit Connect

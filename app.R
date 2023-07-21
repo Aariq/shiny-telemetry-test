@@ -38,7 +38,7 @@ ui <- fluidPage(
       tabsetPanel(
         id = "tabpanel", # give tabsetPanel an optional id so tracking works
         tabPanel("tab 1", plotOutput("distPlot")),
-        tabPanel("tab 2", shiny::h1("HELLO")),
+        tabPanel("tab 2", h1("HELLO")),
       )
     )
   )
@@ -51,7 +51,7 @@ server <- function(input, output) {
     track_inputs = TRUE,
     track_values = TRUE,
     browser_version = FALSE,
-    navigation_input_id = "tabpanel" #id of navbar or tabpanel
+    navigation_input_id = "tabpanel" #ids of navbar or tabpanels you want to track
   ) 
   
   output$distPlot <- renderPlot({
